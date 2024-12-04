@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/*
+The Genres of Anime
+Project Proposal
+
+Style sheet for The Genres of Anime Home Page
+Author: Benjamin Dotson
+Date: 9/27/2024
+
+Filename: Index.css
+
+*/
+
+html{
+    background-color: lightseagreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif; /* Set a base font */
+    line-height: 1.6; /* Improve readability */
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Dark text color */
+    padding: 20px; /* Add padding to the body */
+}
+
+/* Article styles */
+article {
+    background-color: #fff; /* White background for the article */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside the article */
+    margin-bottom: 20px; /* Space below the article */
+}
+
+/* Article header styles */
+article h1 {
+    color: #2c3e50; /* Dark blue color for the title */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+/* Aside styles */
+aside {
+    background-color: #e9ecef; /* Light gray background for the aside */
+    border-left: 5px solid #007bff; /* Blue left border */
+    padding: 15px; /* Padding inside the aside */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Aside header styles */
+aside h2 {
+    color: #007bff; /* Blue color for the aside header */
+    margin-bottom: 10px; /* Space below the aside header */
+}
+
+/* Paragraph styles */
+p {
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+

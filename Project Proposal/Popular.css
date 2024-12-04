@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/*
+The Genres of Anime
+Project Proposal
+
+Style sheet for Popular Anime Genres page
+Author: Benjamin Dotson
+Date: 9/27/2024
+
+Filename: Popular.css
+
+*/
+
+body {
+    font-family: 'Arial', sans-serif; /* Set a base font */
+    line-height: 1.6; /* Improve readability */
+    background: url(Forest_Background.png) left center / cover repeat;
+    color: #333; /* Dark text color */
+    padding: 20px; /* Add padding to the body */
+}
+
+/* General article styles */
+article {
+    max-width: 1200px; /* Set a maximum width for better readability */
+    margin: 20px auto; /* Center the article with auto margins */
+    padding: 20px;
+    background-color: rgba(144, 238, 144, 0.6);
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: auto;
+    justify-content: space-between;
+    display: flex;
+}
+
+.popList {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
+    max-width: 1200px;
+}
+
+#left, #center, #right {
+    flex: 1;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: green solid 2px;
+    color: black;
+    background-color: rgba(144, 238, 144, 0.9);
+    border-radius: 30px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #444;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 640px) {
+    .NavigationBar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    article {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #left, #center, #right {
+        margin-bottom: 20px;
+    }
+}

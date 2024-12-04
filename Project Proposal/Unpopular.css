@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/*
+The Genres of Anime
+Project Proposal
+
+Style sheet for Unpopular Anime Genres page
+Author: Benjamin Dotson
+Date: 9/27/2024
+
+Filename: Unpopular.css
+
+*/
+
+body {
+    font-family: 'Arial', sans-serif; /* Set a base font */
+    line-height: 1.6; /* Improve readability */
+    background-color: gray; /* Light background color */
+    color: #333; /* Dark text color */
+    padding: 20px; /* Add padding to the body */
+}
+
+/* General article styles */
+article {
+    max-width: 1200px; /* Set a maximum width for better readability */
+    margin: 20px auto; /* Center the article with auto margins */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+div.unPopList {
+    display: inline-flex;
+    flex-flow: row wrap; /* Stack dt and dd vertically */
+    position: relative;
+    text-align: center;
+    flex: 1 1 auto;
+    max-width: 1200px;
+}
+
+#left{
+    display: block;
+    text-align: left;
+    width: 33%;
+    border: green solid 2px;
+    border-radius: 30px;
+}
+
+#center{
+    display: block;
+    text-align: left;
+    width: 33%;
+    border: green solid 2px;
+    border-radius: 30px;
+}
+
+#right{
+    display: block;
+    text-align: left;
+    width: 33%;
+    border: green solid 2px;
+    border-radius: 30px;
+}
+
+/* Term styles */
+div h1 {
+    font-weight: bold;
+    font-size: 20px; /* Larger font size for emphasis */
+    color: #2c3e50; /* Darker color for contrast */
+    margin-top: 15px; /* Space above each term */
+    margin-bottom: 5px; /* Space below each term */
+    padding-left: 20px;
+}
+
+p {
+    margin-left: 20px; /* Indent descriptions for clarity */
+    margin-bottom: 15px; /* Space below each description */
+    font-size: 16px; /* Slightly smaller font size for descriptions */
+    line-height: 1.5; /* Improved line spacing for readability */
+    color: #34495e; /* Slightly lighter color for descriptions */
+}

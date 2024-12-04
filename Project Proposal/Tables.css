@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+/*
+The Genres of Anime
+Project Proposal
+
+Style sheet for Tables showing Genres of Anime page
+Author: Benjamin Dotson
+Date: 9/27/2024
+
+Filename: Tables.css
+
+*/
+
+body{
+    background-color: rgb(210, 180, 140);
+    font-family: 'Arial', sans-serif; /* Set a base font */
+    line-height: 1.6; /* Improve readability */
+    padding: 20px; /* Add padding to the body */
+    float: right;
+}
+
+/* General section styles */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 60%;
+}
+
+/* Header styles */
+h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+/* Main Genres table styles */
+#MainG table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#MainG td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    vertical-align: top; /* Align text to the top for better readability */
+}
+
+#MainG tr:nth-child(odd) {
+    background-color: rgb(245, 245, 220);
+}
+
+#MainG tr:nth-child(even){
+    background-color: rgb(211, 182, 156);
+}
+
+#MainG tr:hover {
+    background-color: white;
+    transform: scale3d(1.3, 1.3, 1.3) translate3d(3px, 3px, 3px);
+}
+
+#accOption{
+    display: inline-table;
+    float: right;
+    background-color: rgb(245, 245, 220);
+    border: blue solid 1px;
+    border-radius: 20px;
+    width: 200px;
+    padding: 10px;
+    font-size: 1em;
+    margin: 10px;
+}
+
+#accOption:hover{
+    background-color: blue;
+}
+
+/* Sub Genres table styles */
+.SubG table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.SubG td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    max-width: 200px;
+}
+
+.SubG td:nth-child(odd){
+    background-color: rgb(230, 211, 183);
+}
+
+.SubG td:nth-child(even){
+    background-color: rgb(208, 181, 154);
+}
+
+.SubG td:hover{
+    transform: scale3d(1.1, 1.1, 1.1) translate3d(3px, 3px, 3px);
+}
+
+.SubG td:hover {
+    background-color: #d9d9d9;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 640px) {
+    #MainG td, .SubG td {
+        display: block; /* Stack cells on smaller screens */
+        margin: 5px 0; /* Add spacing between cells */
+    }
+
+    #MainG td {
+        padding: 10px;
+    }
+}
+

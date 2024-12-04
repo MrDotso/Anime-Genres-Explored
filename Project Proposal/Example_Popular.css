@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/*
+The Genres of Anime
+Project Proposal
+
+Style sheet for Examples of Anime from Popular Genres page
+Author: Benjamin Dotson
+Date: 9/27/2024
+
+Filename: Example_Popular.css
+
+*/
+
+/* Reset default margin and padding for better control */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.image-Container{
+    text-align: center;
+}
+
+ul.image-list {
+    list-style-type: none;
+    display: inline-flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 0;
+    max-width: 80%;
+}
+
+li.image-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    max-width: 250px;
+    align-content: center;
+}
+
+li.image-item:hover{
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale3d(1.05, 1.05, 1.05) translateY(6px) translateZ(5px);
+}
+
+.image-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.image-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.image-caption {
+    font-size: 14px;
+    color: black;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 640px) {
+    ul.image-list {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}
+
